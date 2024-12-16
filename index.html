@@ -24,7 +24,7 @@
 
 <body>
     <h1>動画閲覧用パスコード入力</h1>
-    <p>教室で教えてもらったパスコードを入力してください。（ひらがな）</p>
+       <p>教室で教えてもらったパスコードを入力してください。（ひらがな）</p>
     <input type="text" id="passcode" placeholder="パスコードを入力" maxlength="3">
     <button onclick="checkPasscode()">送信</button>
 
@@ -35,8 +35,20 @@
             // パスコードに応じたURLリスト
             const urlMap = {
                 "いちご": "https://drive.google.com/drive/folders/1uKJjISf6CHXS5Ss8I0IVnpElpaB-2_Rz?usp=drive_link",
-                "みかん": "https://drive.google.com/drive/folders/1KTd_dbJyAYwwXrVOgWtW6KJCFBjF53Va?usp=drive_link",
-                "りんご": "https://drive.google.com/drive/folders/1EU6Jm1WIfuFhUR4jV5ahpOCizsFNoqG3?usp=drive_link"
+"たぬき": "https://drive.google.com/drive/folders/1KTd_dbJyAYwwXrVOgWtW6KJCFBjF53Va?usp=drive_link",
+"とまと": "https://drive.google.com/drive/folders/1EU6Jm1WIfuFhUR4jV5ahpOCizsFNoqG3?usp=drive_link",
+"みかん": "https://drive.google.com/drive/folders/1IaqnARuHXETJSu1q3DgbfV4zhFsNkKmb?usp=drive_link",
+"きつね": "https://drive.google.com/drive/folders/1wNBCivIpAsxnhPLMKfCn6uj8RIdAr6lC?usp=drive_link",
+"さんた": "https://drive.google.com/drive/folders/1-uuiZ606n0VUtcUrHF0P-Z3FntUBy4vj?usp=drive_link",
+"りんご": "https://drive.google.com/drive/folders/1t0mjJN7pGqOTdwXIYdJgkBzOE66_-vAo?usp=drive_link",
+"きりん": "https://drive.google.com/drive/folders/1pkUrf3UoENC0_yirterJecFdH_S49pd4?usp=drive_link",
+"いんこ": "https://drive.google.com/drive/folders/19RrCK9oMDSdkk6hRyMeX8DYJiLSjopD1?usp=drive_link",
+"ばなな": "https://drive.google.com/drive/folders/1Rzu-S-5c9wRapOrkw5SxFG307ePRyftV?usp=drive_link",
+"ぱんだ": "https://drive.google.com/drive/folders/1SZTKmQvlcLDgA7MwXY4yM_JEuoV-dYia?usp=drive_link",
+"すずめ": "https://drive.google.com/drive/folders/1ibhEYEvC6V_Y5lR8EXeefDBKufjIP_A4?usp=drive_link",
+"すいか": "https://drive.google.com/drive/folders/1xLwzfG-XwGXhSlZwjbshGvwUY9a6ie6R?usp=drive_link",
+"うさぎ": "https://drive.google.com/drive/folders/1T0SDzLsW9pnCX-K5UftAXLi8XRAhiFoX?usp=drive_link",
+"かもめ": "https://drive.google.com/drive/folders/1720TwwaE56U2UNkN3QhuoSbcS3jpz1qp?usp=drive_link"
             };
 
             if (urlMap[passcode]) {
