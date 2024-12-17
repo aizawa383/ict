@@ -6,18 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PR動画を作ろう！完成動画案内ページ</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
+            /* ベーススタイル */
+    body {
+      font-family: "Arial", sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(to bottom, #ffefba, #ffffff);
+      color: #444;
+    }
+    h1 {
+      font-size: 2em;
+      color: #ff6f91;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 30px;
+    }
 
-        input,
-        button {
-            padding: 10px;
-            margin: 10px;
-            font-size: 16px;
-        }
+    /* 入力フィールドとボタン */
+    input, button {
+      font-size: 16px;
+      padding: 12px 20px;
+      margin: 10px;
+      border: 2px solid #ff6f91;
+      border-radius: 25px;
+      outline: none;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    input {
+      width: 250px;
+      background-color: #fff;
+    }
+    button {
+      background-color: #ff6f91;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff3f6b;
+    }
+
+    /* ボタン押下時のエフェクト */
+    button:active {
+      transform: scale(0.95);
+    }
+
 
     </style>
 </head>
