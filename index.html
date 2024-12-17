@@ -9,12 +9,19 @@
 <style>
     /* ベーススタイル */
     body {
-      font-family: "Arial", sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: #ffefba;
-      color: #444;
-    }
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #ffefba;
+  color: #444;
+
+  /* 中央寄せのための追加コード */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 画面全体の高さにする */
+  margin: 0; /* デフォルトの余白をなくす */
+}
     h1 {
       font-size: 2em;
       color: #ff6f91;
