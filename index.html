@@ -6,76 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PR動画を作ろう！完成動画案内ページ</title>
     <style>
-    /* 全体レイアウト */
-body {	body {
-font-family: "Arial", sans-serif;	font-family: "Arial", sans-serif;
-text-align: center;	display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh; /* 高さを画面全体に合わせる */
-margin: 0;
-background-color: #fdf5e6; /* 優しいベージュ系の背景色 */
-color: #444;
-}
-/* コンテンツのボックス */
-.container {
+<style>
+    /* ベーススタイル */
+    body {
+      font-family: "Arial", sans-serif;
       text-align: center;
-padding: 50px;	padding: 30px;
-background: linear-gradient(to bottom, #ffefba, #ffffff);	border: 2px solid #ff6f91;
-border-radius: 15px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-color: #444;	background-color: #fff;
-max-width: 400px;
-width: 100%;
-}	}
-/* タイトルと説明 */
-h1 {	h1 {
-font-size: 2em;	font-size: 2em;
-color: #ff6f91;	color: #ff6f91;
-margin-bottom: 20px;	margin-bottom: 20px;
-}	}
-p {	p {
-font-size: 1.2em;	font-size: 1.1em;
-color: #666;	color: #666;
-margin-bottom: 30px;	margin-bottom: 30px;
-}	}
-/* 入力フィールドとボタン */	/* 入力フィールドとボタン */
-input, button {	input, button {
-font-size: 16px;	font-size: 16px;
-padding: 12px 20px;	padding: 12px 20px;
-margin: 10px;	margin: 10px 0;
-border: 2px solid #ff6f91;	border: 2px solid #ff6f91;
-border-radius: 25px;	border-radius: 25px;
-outline: none;	outline: none;
-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}	}
-input {	input {
-width: 250px;	width: 100%;
-background-color: #fff;	box-sizing: border-box; /* フィールドがボックス幅に収まるように */
-      background-color: #fff;
-}	}
-button {	button {
-background-color: #ff6f91;	background-color: #ff6f91;
-color: #fff;	color: #fff;
-cursor: pointer;	cursor: pointer;
-transition: background-color 0.3s ease;	transition: background-color 0.3s ease;
-}	width: 100%;
+      padding: 50px;
+      background: linear-gradient(to bottom, #ffefba, #ffffff);
+      color: #444;
     }
-button:hover {	button:hover {
-background-color: #ff3f6b;	background-color: #ff3f6b;
-}	}
+    h1 {
+      font-size: 2em;
+      color: #ff6f91;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    /* 入力フィールドとボタン */
+    input, button {
+      font-size: 16px;
+      padding: 12px 20px;
+      margin: 10px;
+      border: 2px solid #ff6f91;
+      border-radius: 25px;
+      outline: none;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    input {
+      width: 250px;
+      background-color: #fff;
+    }
+    button {
+      background-color: #ff6f91;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff3f6b;
+    }
 
     /* ボタン押下時のエフェクト */
     button:active {
       transform: scale(0.95);
     }
 
-
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="">
     <h1>動画閲覧用パスコード入力</h1>
        <p>教室で教えてもらったパスコードを入力してください。（ひらがな）</p>
     <input type="text" id="passcode" placeholder="パスコードを入力" maxlength="3">
